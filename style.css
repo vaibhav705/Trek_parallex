@@ -1,0 +1,200 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+#wrapper{
+  height: 100vh;
+  perspective: 10px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.container{
+  position:relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  transform-style:preserve-3d;
+  z-index: -1;
+}
+
+.Background{
+  transform: translateZ(-40px) scale(5.1);
+}
+.Foreground{
+  transform: translateZ(-20px) scale(3);
+}
+
+.Background , .Foreground{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /* object fits to its parent div */
+  object-fit: cover;
+  /* fixed the background  */
+  z-index: -1;
+}
+.heading{
+  position: absolute;
+  font-size: 10rem;
+  letter-spacing: 4px;
+  top: 5rem;
+  color: white;
+  text-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.TrekType{
+  background-color: rgb(45,45,45);
+  color: white;
+  padding: 5rem 0;
+}
+.secHeading{
+  font-size: 5rem;
+  padding: 0 10rem;
+}
+.text{
+  font-size: 1.5rem;
+  padding: 0 10rem;
+  margin: 5rem 0;
+}
+.bg{
+  position: relative;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+.disc{
+  position: absolute;
+  background-color: white;
+  color:black;
+  padding: 0.5rem 2.5rem;
+  font-size: 3.5rem;
+  font-weight: 600;
+  top: 50%;
+  left: 30%;
+}
+.bg1{
+  background-image: url(sports-1.jpeg);
+}
+.bg2{
+  background-image: url(sports-2.jpeg);
+}
+.bg3{
+  background-image: url(sports-3.jpeg);
+}
+
+
+/************ Section Trek Detail is Started ************/
+.trekInfo{
+  display:flex;
+  padding:6rem 0 6rem 10rem;
+}
+.MonthsDiv , .RegionDiv{
+  display: flex;
+}
+.headingInfo{
+  padding: 2px 0 2px 0;
+  font-size: 25px;
+  font-weight: bold;
+}
+.textArea{
+  font-size: 1.3rem;
+}
+/* Season Area */
+.season{
+  width: 20%;
+}
+.seasonSize{
+  line-height: 1.5rem;
+  padding-left: 1.1rem;
+}
+
+/* Constrain Area */
+.constrain{
+  width: 20%;
+}
+.constrainSize{
+  line-height: 1.5rem;
+  padding-left: 1.1rem;
+}
+
+/* Month Area */
+.months{
+  width: 30%;
+}
+.MonthsDiv{
+  line-height: 1.5rem;
+  padding-left: 1.1rem;
+}
+.M1{
+  width: 55%;
+}
+.M1,.M2{
+  line-height: 1.5rem;
+}
+
+/* Region Area */
+.region{
+  width: 30%;
+}
+.RegionDiv{
+  line-height: 1.5rem;
+  padding-left: 1.1rem;
+}
+.R1{
+  width: 60%;
+}
+.R1,.R2{
+  line-height: 1.5rem;
+}
+
+
+/***************   Border    ***************/
+.footer{
+  display: flex;
+  padding: 5rem 10rem;
+}
+.footer1
+{
+  padding: 20px 10px;
+  width: 100vw;
+}
+/* icon */
+.social-media {
+  margin: 3% 5% 5% 0;
+  color: #000000;
+}
+
+
+.followUs,.aboutUs{
+  display: flex;
+}
+.followUs{
+  padding-top: 6px;
+  padding-left: 6px;
+  padding-bottom: 15px;
+}
+
+.headingF{
+  width: auto;
+  padding-top: 20px;
+}
+.icon-div{
+  padding-left: 15px;
+  width: 50%;
+}
+
+.aboutUs{
+  padding: 15px 6px 200px 6px;
+}
+.abt1,.abt2{
+  padding-right: 50px;
+  padding-top: 10px;
+}
+.f1,.f2{
+  align-items: flex-end;
+  padding: 7px 5px 0 5px;
+}
